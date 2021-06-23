@@ -31,6 +31,9 @@
         <activity
             android:name=".RhythmBlues"
             android:label="@string/rhythm_blues_playlist" />
+        <activity
+            android:name=".NowPlaying"
+            android:label="@string/now_playing" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

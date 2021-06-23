@@ -3,9 +3,11 @@ package com.example.android.musicplayer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,15 +39,40 @@ public class Country extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        /* (Messing around to try and get it working here)
-        RelativeLayout chosenSong = findViewById(R.id.song_view);
-        chosenSong.setOnClickListener(new View.OnClickListener() {
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent chosenIntent = new Intent(Country.this, NowPlaying.class);
-                startActivity(chosenIntent);
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //String selectedItem = (String) parent.getItemAtPosition(position);
+                Intent nowPlayingIntent = new Intent(getBaseContext(), NowPlaying.class);
+                //nowPlayingIntent.putExtra("chosenSong", position);
+                //nowPlayingIntent.putExtra("countryList", songs);
+                startActivity(nowPlayingIntent);
             }
         });
-        */
+
+
+
+
+
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

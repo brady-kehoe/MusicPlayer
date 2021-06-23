@@ -13,7 +13,7 @@
         android:layout_height="400dp"
         android:layout_centerInParent="true"
         android:padding="24dp"
-        tools:src="@drawable/pop_lostcause"/>
+        android:src="@drawable/pop_lostcause"/>
 
     <TextView
         android:id="@+id/now_playing_this"
@@ -26,19 +26,19 @@
         android:layout_above="@id/now_playing_image"
         style="@style/NowPlayingLayout"
         android:textStyle="bold"
-        tools:text="playlist"/>
+        android:text="playlist"/>
 
     <TextView
         android:id="@+id/now_playing_title"
         android:layout_below="@id/now_playing_image"
         style="@style/NowPlayingLayout"
-        tools:text="title"/>
+        android:text="title"/>
 
     <TextView
         android:id="@+id/now_playing_artist"
         android:layout_below="@id/now_playing_title"
         style="@style/NowPlayingLayout"
-        tools:text="artist"/>
+        android:text="artist"/>
 
     <ImageView
         android:id="@+id/now_playing_play_button"
