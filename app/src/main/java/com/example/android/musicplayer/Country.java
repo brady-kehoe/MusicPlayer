@@ -37,7 +37,8 @@ public class Country extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        RelativeLayout chosenSong = findViewById(R.id.song_group);
+        /* (Messing around to try and get it working here)
+        RelativeLayout chosenSong = findViewById(R.id.song_view);
         chosenSong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,5 +46,6 @@ public class Country extends AppCompatActivity {
                 startActivity(chosenIntent);
             }
         });
+        */
     }
 }

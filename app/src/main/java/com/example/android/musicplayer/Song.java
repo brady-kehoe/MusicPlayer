@@ -3,7 +3,7 @@ package com.example.android.musicplayer;
 
 public class Song {
 
-    public static String title;
+    public String title;
 
     public String artist;
 

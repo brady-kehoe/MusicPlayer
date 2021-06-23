@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/song_group"
+    android:id="@+id/song_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +10,7 @@
     android:id="@+id/title_text_view"
     style="@style/TitleText"
     android:layout_toLeftOf="@id/icon_image_view"
-    tools:text="@string/title" />
+    tools:text="title" />
 
 <TextView
     android:id="@+id/artist_text_view"

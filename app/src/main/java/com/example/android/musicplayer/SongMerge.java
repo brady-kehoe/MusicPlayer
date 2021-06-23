@@ -30,7 +30,6 @@ public class SongMerge extends ArrayAdapter<Song> {
         Song currentSong = getItem(position);
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
         titleTextView.setText(currentSong.getTitle());
-        Log.i("ID", Song.title);
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
         artistTextView.setText(currentSong.getArtist());
         ImageView coverImageView = (ImageView) listItemView.findViewById(R.id.icon_image_view);
