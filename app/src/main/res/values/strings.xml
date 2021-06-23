@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="rock_playlist">Rock</string>
+    <string name="pop_playlist">Pop</string>
+    <string name="country_playlist">Country</string>
+    <string name="heavy_metal_playlist">Heavy Metal</string>
+    <string name="hip_hop_playlist">Hip Hop</string>
+    <string name="jazz_playlist">Jazz</string>
+    <string name="electronic_playlist">Electronic</string>
+    <string name="rhythm_blues_playlist">Rhythm and Blues</string>
+    <string name="title">title</string>
+
+
+
+
+</resources>

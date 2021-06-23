@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/now_playing_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_background_color">
+
+
+    <ImageView
+        android:id="@+id/now_playing_image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:padding="24dp"
+        tools:src="@drawable/pop_lostcause"/>
+
+    <TextView
+        android:id="@+id/now_playing_this"
+        android:layout_above="@id/now_playing_playlist"
+        style="@style/NowPlayingLayout"
+        android:text="Now Playing from the Playlist"/>
+
+    <TextView
+        android:id="@+id/now_playing_playlist"
+        android:layout_above="@id/now_playing_image"
+        style="@style/NowPlayingLayout"
+        android:textStyle="bold"
+        tools:text="playlist"/>
+
+    <TextView
+        android:id="@+id/now_playing_title"
+        android:layout_below="@id/now_playing_image"
+        style="@style/NowPlayingLayout"
+        tools:text="title"/>
+
+    <TextView
+        android:id="@+id/now_playing_artist"
+        android:layout_below="@id/now_playing_title"
+        style="@style/NowPlayingLayout"
+        tools:text="artist"/>
+
+    <ImageView
+        android:id="@+id/now_playing_play_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/playbutton"
+        android:layout_below="@id/now_playing_artist"/>
+
+    <ImageView
+        android:id="@+id/now_playing_skipbackward_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/lastsong"
+        android:layout_toLeftOf="@id/now_playing_play_button"
+        android:layout_below="@id/now_playing_artist"/>
+
+    <ImageView
+        android:id="@+id/now_playing_skipforward_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/skipbutton"
+        android:layout_toRightOf="@id/now_playing_play_button"
+        android:layout_below="@id/now_playing_artist"/>
+
+
+</RelativeLayout>

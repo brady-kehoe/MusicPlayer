@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/song_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/title_text_view"
+    style="@style/TitleText"
+    android:layout_toLeftOf="@id/icon_image_view"
+    tools:text="@string/title" />
+
+<TextView
+    android:id="@+id/artist_text_view"
+    style="@style/ArtistText"
+    tools:text="artist"
+    android:layout_below="@id/title_text_view"
+    android:layout_toLeftOf="@id/icon_image_view" />
+
+<ImageView
+    android:id="@+id/icon_image_view"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="@color/song_background_color"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/pop_lostcause" />
+
+</RelativeLayout>

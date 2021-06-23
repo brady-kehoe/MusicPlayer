@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rock"
+        style="@style/AlbumText"
+        android:text="@string/rock_playlist" />
+
+    <TextView
+        android:id="@+id/pop"
+        style="@style/AlbumText"
+        android:text="@string/pop_playlist" />
+    <TextView
+        android:id="@+id/country"
+        style="@style/AlbumText"
+        android:text="@string/country_playlist" />
+    <TextView
+        android:id="@+id/heavy_metal"
+        style="@style/AlbumText"
+        android:text="@string/heavy_metal_playlist" />
+    <TextView
+        android:id="@+id/hip_hop"
+        style="@style/AlbumText"
+        android:text="@string/hip_hop_playlist" />
+    <TextView
+        android:id="@+id/electronic"
+        style="@style/AlbumText"
+        android:text="@string/electronic_playlist" />
+    <TextView
+        android:id="@+id/rhythm_blues"
+        style="@style/AlbumText"
+        android:layout_marginBottom="16dp"
+        android:text="@string/rhythm_blues_playlist" />
+
+
+</LinearLayout>
+</ScrollView>
