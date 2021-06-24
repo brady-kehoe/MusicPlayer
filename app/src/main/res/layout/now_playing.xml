@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/now_playing_image"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:layout_centerInParent="true"
-        android:padding="24dp"
+        android:padding="8dp"
         android:src="@drawable/pop_lostcause"/>
 
     <TextView
